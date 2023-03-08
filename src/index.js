@@ -49,7 +49,9 @@ const specs = swaggerJsDoc(options);
 app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(specs));
 
 // Here we are calling the basic html
+// Use the router from the hello.js file
 app.use("/", helloRouter);
-app.use("/posts", postRouter); // Use the router from the hello.js file
+// Use the router from the post.js file
+app.use("/posts", postRouter);
 
 app.listen(PORT, () => console.log(`Server runs on port ${PORT}`));
