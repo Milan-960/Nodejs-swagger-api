@@ -11,6 +11,10 @@ import bodyParser from "body-parser";
 import postRouter from "./src/Routes/posts.js";
 import helloRouter from "./src/hello.js";
 
+// CDN CSS
+
+const CSS_URL = "https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.1.0/swagger-ui.min.css"
+
 const app = express();
 
 app.use(bodyParser.json()); // to use body object in requests
@@ -47,7 +51,7 @@ const options = {
 
 const specs = swaggerJsDoc(options);
 // app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(specs));
-app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(specs, {customCssUrl: "/public/swagger.css"}));
+app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(specs, {customCssUrl: CSS_URL}));
 
 
 // Here we are calling the basic html
