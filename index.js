@@ -8,8 +8,8 @@ import swaggerJsDoc from "swagger-jsdoc";
 import bodyParser from "body-parser";
 
 // Import the router from the hello.js file
-import postRouter from "./Routes/posts.js";
-import helloRouter from "./hello.js";
+import postRouter from "./src/Routes/posts.js";
+import helloRouter from "./src/hello.js";
 
 const app = express();
 
