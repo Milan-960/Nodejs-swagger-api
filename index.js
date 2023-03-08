@@ -41,12 +41,14 @@ const options = {
       },
     ],
   },
-  // This is to call all the files
+  // This is to call all the file
   apis: ["src/**/*.js"],
 };
 
 const specs = swaggerJsDoc(options);
-app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(specs));
+// app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(specs));
+app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(specs, {customCssUrl: "https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.1.0/swagger-ui.min.css"}));
+
 
 // Here we are calling the basic html
 // Use the router from the hello.js file
