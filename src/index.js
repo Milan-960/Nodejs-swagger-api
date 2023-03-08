@@ -6,7 +6,6 @@ import swaggerUI from "swagger-ui-express";
 import swaggerJsDoc from "swagger-jsdoc";
 
 import bodyParser from "body-parser";
-import packageJSON from "../package.json";
 
 // Import the router from the hello.js file
 import postRouter from "./Routes/posts.js";

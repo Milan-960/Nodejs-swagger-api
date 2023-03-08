@@ -9,6 +9,7 @@
   },
   "scripts": {
     "dev": "nodemon src/index.js",
+    "start": "nodemon src/index.js",
     "build": "npm run clean && npm run compile",
     "compile": "babel src --out-dir dist",
     "clean": "rm -rf dist",
