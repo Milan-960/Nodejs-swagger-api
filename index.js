@@ -99,7 +99,7 @@ const options = {
     },
     servers: [
       {
-        url: "http://localhost:2000",
+        url: "HTTPS",
         description: "My API Documentation",
       },
     ],
@@ -112,7 +112,7 @@ const specs = swaggerJsDoc(options);
 // app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(specs));
 
 // custome css added!
-app.use("/public", express.static("public"));
+app.use("/public", express.static("public/swagger.css"));
 app.use(
   "/api-docs",
   swaggerUI.serve,
@@ -121,8 +121,12 @@ app.use(
 
 // Here we are calling the basic html
 // Use the router from the hello.js file
+
+//* All the routes goes here!
 app.use("/", helloRouter);
+
 // Use the router from the post.js file
 app.use("/posts", postRouter);
 
+//? This is for running the app
 app.listen(PORT, () => console.log(`Server runs on port ${PORT}`));
