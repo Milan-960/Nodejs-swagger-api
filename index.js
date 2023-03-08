@@ -41,7 +41,7 @@ const options = {
     },
     servers: [
       {
-        url: "http://localhost:2000",
+        url: "https://nodejs-swagger-api.vercel.app/",
         description: "My API Documentation",
       },
     ],
