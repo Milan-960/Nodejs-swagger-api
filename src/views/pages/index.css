@@ -1,11 +1,8 @@
 .app {
   text-align: center;
-  background-color: red;
+  color: white;
 }
 
 body {
-  background-color: red;
-}
-h1 {
-  text-align: center;
+  background-color: rgb(91, 91, 91);
 }
