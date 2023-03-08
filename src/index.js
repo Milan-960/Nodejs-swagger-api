@@ -48,6 +48,7 @@ const options = {
 const specs = swaggerJsDoc(options);
 app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(specs));
 
+// Here we are calling the basic html
 app.use("/", helloRouter);
 app.use("/posts", postRouter); // Use the router from the hello.js file
 
