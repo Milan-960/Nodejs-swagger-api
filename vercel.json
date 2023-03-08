@@ -4,7 +4,7 @@
     {
       "src": "index.js"
     },
-    { "src": "/Routes/(.*)", "dist": "/$1" },
-    { "src": "/(.*)", "dist": "/" }
+    { "src": "/Routes/(.*)", "dest": "/$1" },
+    { "src": "/(.*)", "dest": "/" }
   ]
 }
