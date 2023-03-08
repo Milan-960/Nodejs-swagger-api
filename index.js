@@ -65,14 +65,16 @@ import express from "express";
 import cors from "cors";
 import morgan from "morgan";
 import dotenv from "dotenv";
+import bodyParser from "body-parser";
 import swaggerUI from "swagger-ui-express";
 import swaggerJsDoc from "swagger-jsdoc";
-
-import bodyParser from "body-parser";
 
 // Import the router from the hello.js file
 import postRouter from "./src/Routes/posts.js";
 import helloRouter from "./src/hello.js";
+
+//? CDN CSS
+// const CSS_URL = "https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.1.0/swagger-ui.min.css"
 
 const app = express();
 
@@ -116,7 +118,7 @@ app.use("/public", express.static("public/swagger.css"));
 app.use(
   "/api-docs",
   swaggerUI.serve,
-  swaggerUI.setup(specs, { customCssUrl: "/public/swagger.css" })
+  swaggerUI.setup(specs, { customCssUrl: "/public/swagger.css" || CSS_URL })
 );
 
 // Here we are calling the basic html
