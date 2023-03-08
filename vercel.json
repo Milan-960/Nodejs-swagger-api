@@ -3,6 +3,8 @@
   "builds": [
     {
       "src": "index.js"
-    }
+    },
+    { "src": "/Routes/(.*)", "dist": "/$1" },
+    { "src": "/(.*)", "dist": "/" }
   ]
 }
