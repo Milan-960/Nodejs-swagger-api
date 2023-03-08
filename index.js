@@ -74,7 +74,8 @@ import postRouter from "./src/Routes/posts.js";
 import helloRouter from "./src/hello.js";
 
 //? CDN CSS
-// const CSS_URL = "https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.1.0/swagger-ui.min.css"
+const CSS_URL =
+  "https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.1.0/swagger-ui.min.css";
 
 const app = express();
 
@@ -118,7 +119,7 @@ app.use("/public", express.static("public/swagger.css"));
 app.use(
   "/api-docs",
   swaggerUI.serve,
-  swaggerUI.setup(specs, { customCssUrl: "/public/swagger.css" || CSS_URL })
+  swaggerUI.setup(specs, { customCssUrl: "/public/swagger.css" && CSS_URL })
 );
 
 // Here we are calling the basic html
