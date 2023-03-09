@@ -1,6 +1,39 @@
+## Follow the steps below to create a RESTful server using swager!
+
+## Here is the Tree
+
+```
+ ┣ 📂public
+ ┣ 📂src
+ ┃ ┣ 📂Data
+ ┃ ┃ ┗ 📜data.js
+ ┃ ┣ 📂Routes
+ ┃ ┃ ┗ 📜posts.js
+ ┃ ┣ 📂views
+ ┃ ┃ ┣ 📂pages
+ ┃ ┃ ┃ ┣ 📜index.css
+ ┃ ┃ ┃ ┣ 📜index.ejs
+ ┃ ┃ ┃ ┗ 📜log.jpeg
+ ┃ ┃ ┣ 📂public
+ ┃ ┃ ┃ ┗ 📜index.css
+ ┃ ┃ ┗ 📜.DS_Store
+ ┃ ┣ 📜.DS_Store
+ ┃ ┗ 📜hello.js
+ ┣ 📜.DS_Store
+ ┣ 📜.babelrc
+ ┣ 📜.gitignore
+ ┣ 📜Readme.md
+ ┣ 📜index.js
+ ┣ 📜nodemon.json
+ ┣ 📜now.json
+ ┣ 📜package-lock.json
+ ┣ 📜package.json
+ ┗ 📜vercel.json
+```
+
 ## Firstly let’s create a RESTful web server:
 
-## I navigate the cursor to the file I will create the project in the terminal and I am creating the package.json file with the following command:
+## Navigate the cursor to the file I will create the project in the terminal and I am creating the package.json file with the following command:
 
 ```
 npm init --y
