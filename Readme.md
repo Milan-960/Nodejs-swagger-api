@@ -85,3 +85,17 @@ npm install swagger-jsdoc swagger-ui-express
 import swaggerUI from “swagger-ui-express”;
 import swaggerJsDoc from “swagger-jsdoc”;
 ```
+
+<style>
+r { color: Red }
+o { color: Orange }
+g { color: Green; font-style: italic; font-weight: bold; } //italic emphasis
+</style>
+
+# <g> PS: If you have any other ideas about what can be improved please share your thoughts I would really appreciate that!</g>
+
+<img align="right" src="public/Home.png" width="100%"/>&nbsp;
+&nbsp;
+
+<img align="right" src="public/api-docs.png" width="100%"/>&nbsp;
+&nbsp;
