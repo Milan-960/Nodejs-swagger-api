@@ -87,10 +87,10 @@ import swaggerJsDoc from “swagger-jsdoc”;
 ```
 
 ```diff
-@@ PS: If you have any other ideas about what can be improved please share your thoughts I would really appreciate that!@@
+PS: If you have any other ideas about what can be improved please share your thoughts I would really appreciate that!
 ```
 
-# <font color="green"> @@ PS: If you have any other ideas about what can be improved please share your thoughts I would really appreciate that! @@ </font>
+# <font color="green">PS: If you have any other ideas about what can be improved please share your thoughts I would really appreciate that!</font>
 
 <img align="right" src="public/Home.png" width="100%"/>&nbsp;
 &nbsp;
