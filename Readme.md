@@ -86,7 +86,9 @@ import swaggerUI from “swagger-ui-express”;
 import swaggerJsDoc from “swagger-jsdoc”;
 ```
 
-# <font color="green">PS: If you have any other ideas about what can be improved please share your thoughts I would really appreciate that!</font>
+## $\textcolor{yellow}{PS: If\ you\ have\ any\ other\ ideas\ about\ what\ can\ be\ improved\ please\ share\ your\ thoughts\ I\ would\ really\ appreciate\ that!}$
+
+&nbsp;
 
 <img align="right" src="public/Home.png" width="100%"/>&nbsp;
 &nbsp;
